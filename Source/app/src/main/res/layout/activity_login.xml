@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ViewControler.Login.LoginActivity"
+    android:background="@drawable/login_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:fontFamily="@font/chalkduster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KOI CHUNG"
+            android:textSize="45dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/login_db"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ten dang nhap"
+                android:background="@drawable/edlogin_db"
+                android:textColorHint="#66FFFFFF"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"/>
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="mat khau"
+                android:textColorHint="#66FFFFFF"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/edlogin_db"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"/>
+            <TextView
+                android:fontFamily="@font/marker_felt_wide"
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-Dang nhap-"
+                android:textSize="15sp"
+                android:textColor="#CB3BBB43"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:onClick="Login"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

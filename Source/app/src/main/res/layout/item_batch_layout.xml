@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Lô : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng : "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Còn lại : "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_last_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguồn gốc : "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người Bán : "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người Mua : "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_batch_buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dawdwda "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú: "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/tv_batch_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adwdadwd"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú riêng: "
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/tv_batch_private_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adwdadwd"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        >
+        <TextView
+            android:id="@+id/tv_batch_create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/23/1211"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

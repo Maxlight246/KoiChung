@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KoiChung</string>
+    <string name="title_summary">Thống kê</string>
+    <string name="title_agency">Đại lý</string>
+    <string name="title_order">Đơn hàng</string>
+    <string name="title_batch">Lô hàng</string>
+    <string name="title_contract">Hợp đồng</string>
+</resources>
