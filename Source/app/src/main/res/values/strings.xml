@@ -5,4 +5,5 @@
     <string name="title_order">Đơn hàng</string>
     <string name="title_batch">Lô hàng</string>
     <string name="title_contract">Hợp đồng</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
 </resources>

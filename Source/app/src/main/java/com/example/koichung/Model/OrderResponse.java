@@ -4,7 +4,7 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class BatchResponse {
+public class OrderResponse {
 
     @SerializedName("$id")
     @Expose
@@ -17,7 +17,7 @@ public class BatchResponse {
     private Integer code;
     @SerializedName("result")
     @Expose
-    private List<Batch> listBatch = null;
+    private List<Order> result = null;
     @SerializedName("message")
     @Expose
     private String message;
@@ -46,12 +46,12 @@ public class BatchResponse {
         this.code = code;
     }
 
-    public List<Batch> getListBatch() {
-        return listBatch;
+    public List<Order> getResult() {
+        return result;
     }
 
-    public void setContract(List<Batch> listBatch) {
-        this.listBatch = listBatch;
+    public void setResult(List<Order> result) {
+        this.result = result;
     }
 
     public String getMessage() {

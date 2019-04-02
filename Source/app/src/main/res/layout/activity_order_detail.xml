@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewControler.Order.OrderDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/tv_title_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách đơn hàng"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7EA39999"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_order_detail_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_order_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_order_detail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_order_detail_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_order_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày bán:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_order_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adwdwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

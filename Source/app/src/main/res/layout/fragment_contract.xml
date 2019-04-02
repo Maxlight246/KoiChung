@@ -4,7 +4,41 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-   <android.support.design.widget.TabLayout
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hợp đồng"
+            android:textSize="@dimen/text_bold"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:tint="@color/colorPrimary"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7EA39999"
+        />
+
+    <android.support.design.widget.TabLayout
        android:id="@+id/tab_contract"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -12,8 +46,8 @@
        app:tabSelectedTextColor="@color/colorPrimary"
        android:background="#fff"
        app:tabIndicatorColor="@color/colorPrimary"
+       app:tabMode="scrollable"
        >
-
    </android.support.design.widget.TabLayout>
 
     <LinearLayout
@@ -35,18 +69,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tu ngay"
+                    android:text="Từ ngày"
                     android:textSize="15sp"
                     android:textColor="@color/colorBlack"
                     android:padding="5dp"/>
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:background="@drawable/db_tv_primary"
-                android:gravity="center"
                 android:layout_marginLeft="10dp"
                 >
                 <TextView
@@ -55,9 +88,11 @@
                     android:text="20/11/2011"
                     android:textSize="15sp"
                     android:textColor="@color/colorPrimary"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    />
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -75,30 +110,39 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dai ly"
+                    android:text="Đại lý"
                     android:textSize="15sp"
                     android:textColor="@color/colorBlack"
                     android:padding="5dp"/>
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:background="@drawable/db_tv_primary"
-                android:gravity="center"
                 android:layout_marginLeft="10dp"
-                android:orientation="horizontal">
+                >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20/11/2011"
+                    android:text="Tất cả"
                     android:textSize="15sp"
                     android:textColor="@color/colorPrimary"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    />
 
+                <ImageView
 
-            </LinearLayout>
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_disclosure" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -116,38 +160,53 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lo hang"
+                    android:text="Lô hàng"
                     android:textSize="15sp"
                     android:textColor="@color/colorBlack"
                     android:padding="5dp"/>
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:background="@drawable/db_tv_primary"
-                android:gravity="center"
                 android:layout_marginLeft="10dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20/11/2011"
+                    android:text="Tất cả"
                     android:textSize="15sp"
                     android:textColor="@color/colorPrimary"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    />
 
-            </LinearLayout>
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_disclosure" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7EA39999"
+        android:layout_marginTop="15dp"/>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_contract"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

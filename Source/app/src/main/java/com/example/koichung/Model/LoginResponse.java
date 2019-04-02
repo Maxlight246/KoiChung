@@ -15,7 +15,7 @@ public class LoginResponse {
     @SerializedName("code")
     @Expose
     private Integer code;
-    @SerializedName("Contract")
+    @SerializedName("result")
     @Expose
     private User user;
     @SerializedName("message")

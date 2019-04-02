@@ -59,7 +59,7 @@ public class ListContractFragment extends FragmentWithListView {
         lv.setAdapter(adapter);
     }
 
-    void getContractData(final JsonObject jsonObject){
+    void getContractData(JsonObject jsonObject){
         RetrofitClient.getInstance().create(APIServer.class).getContract(jsonObject).enqueue(new Callback<ContractResponse>() {
             @Override
             public void onResponse(Call<ContractResponse> call, Response<ContractResponse> response) {

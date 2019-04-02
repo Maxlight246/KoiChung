@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-   >
+    >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -22,6 +22,14 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:tint="@color/colorPrimary"/>
+
 
     </android.support.v7.widget.Toolbar>
 
@@ -31,13 +39,11 @@
         android:background="#7EA39999"
         />
 
-
-    <FrameLayout
-        android:id="@+id/fragment_agency_container"
+    <ListView
+        android:id="@+id/lv_agency"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </FrameLayout>
-
+    </ListView>
 
 </LinearLayout>

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="text_normal">15sp</dimen>
     <dimen name="text_bold">20sp</dimen>
+    <dimen name="height_toolbar">50dp</dimen>
 </resources>

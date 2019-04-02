@@ -1,8 +1,11 @@
 package com.example.koichung.Network;
 
+import com.example.koichung.Model.AgencyResponse;
 import com.example.koichung.Model.BatchResponse;
 import com.example.koichung.Model.ContractResponse;
 import com.example.koichung.Model.LoginResponse;
+import com.example.koichung.Model.OrderDetailResponse;
+import com.example.koichung.Model.OrderResponse;
 import com.google.gson.JsonObject;
 
 import retrofit2.Call;
@@ -24,4 +27,16 @@ public interface APIServer {
     @POST("api/Service/GetListContract")
     @Headers("Content-Type:application/json")
     Call<ContractResponse> getContract (@Body JsonObject jsonObject);
+    //getListOrder
+    @POST("api/Service/GetListOrder")
+    @Headers("Content-Type:application/json")
+    Call<OrderResponse> getOrder(@Body JsonObject jsonObject);
+    //getListAgency
+    @POST("api/Service/GetListAgency")
+    @Headers("Content-Type:application/json")
+    Call<AgencyResponse> getAgency(@Body JsonObject jsonObject);
+    //getOrderDetail
+    @POST("api/Service/GetOrderDetail")
+    @Headers("Content-Type:application/json")
+    Call<OrderDetailResponse> getOrderDetail(@Body JsonObject jsonObject);
 }

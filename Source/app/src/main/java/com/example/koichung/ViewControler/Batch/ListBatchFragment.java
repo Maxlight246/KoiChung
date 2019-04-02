@@ -1,10 +1,10 @@
 package com.example.koichung.ViewControler.Batch;
 
-import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.widget.BaseAdapter;
-import android.widget.ProgressBar;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.koichung.Model.Batch;
@@ -12,8 +12,8 @@ import com.example.koichung.Model.BatchResponse;
 import com.example.koichung.Network.APIServer;
 import com.example.koichung.Network.RetrofitClient;
 import com.example.koichung.Utils.AppConfig;
-import com.example.koichung.ViewControler.Base.BaseFragment;
 import com.example.koichung.ViewControler.Base.FragmentWithListView;
+import com.example.koichung.ViewControler.Batch.BatchDetail.BatchDetailActivity;
 import com.google.gson.JsonObject;
 
 import java.util.ArrayList;
@@ -52,6 +52,7 @@ public class ListBatchFragment extends FragmentWithListView {
         super.init();
         adapter = new BatchAdapter(getActivity(),data);
         lv.setAdapter(adapter);
+        clickItem();
     }
 
     public void getBatchData(JsonObject jsonObject){
@@ -89,5 +90,15 @@ public class ListBatchFragment extends FragmentWithListView {
         args.putInt(INPUT_TYPE,inputType);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    void clickItem(){
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), BatchDetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

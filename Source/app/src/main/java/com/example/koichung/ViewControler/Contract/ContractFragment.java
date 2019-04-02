@@ -51,10 +51,10 @@ public class ContractFragment extends BaseFragment {
     }
 
     public void addFragment(){
-        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_ALL),"tat ca");
-        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_WATTING_APPROVE),"cho duyet");
-        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_OPEN),"thuc hien");
-        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_COMPLETE),"hoan thanh");
-        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_OVER_DAY),"qua han");
+        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_ALL),"tất cả");
+        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_WATTING_APPROVE),"chờ duyệt");
+        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_OPEN),"thực hiện");
+        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_COMPLETE),"hoàn thành");
+        viewPagerAdapter.addFragment(ListContractFragment.newInstance(STATUS_OVER_DAY),"quá hạn");
     }
 }

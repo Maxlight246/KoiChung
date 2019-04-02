@@ -15,7 +15,7 @@ public class ContractResponse {
     @SerializedName("code")
     @Expose
     private Integer code;
-    @SerializedName("Contract")
+    @SerializedName("result")
     @Expose
     private List<Contract> ListContract = null;
     @SerializedName("message")

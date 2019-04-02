@@ -77,7 +77,6 @@ public class ContractAdapter extends BaseAdapter {
             tvDateFunds.setText(contract.getDateFunds());
             tvDateComit.setText(contract.getDateCommit());
             tvCreateDate.setText(contract.getCreateDate());
-            tvPercentComit.setText(contract.getPecentcommit());
             switch (contract.getStatus()){
                 case 0:
                     tvStatus.setText("Chờ duyệt");

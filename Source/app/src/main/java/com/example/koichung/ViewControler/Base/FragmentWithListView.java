@@ -18,7 +18,6 @@ public class FragmentWithListView extends BaseFragment {
     protected ListView lv;
     protected SwipeRefreshLayout swipeRefreshLayout;
     protected int currentPage = 1;
-    protected String searchKey = "";
     protected boolean isLoading = false;
 
     @Nullable

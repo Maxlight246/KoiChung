@@ -1,10 +1,9 @@
 package com.example.koichung.Model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class BatchResponse {
+public class OrderDetailResponse {
 
     @SerializedName("$id")
     @Expose
@@ -17,7 +16,7 @@ public class BatchResponse {
     private Integer code;
     @SerializedName("result")
     @Expose
-    private List<Batch> listBatch = null;
+    private OrderDetail result;
     @SerializedName("message")
     @Expose
     private String message;
@@ -46,12 +45,12 @@ public class BatchResponse {
         this.code = code;
     }
 
-    public List<Batch> getListBatch() {
-        return listBatch;
+    public OrderDetail getResult() {
+        return result;
     }
 
-    public void setContract(List<Batch> listBatch) {
-        this.listBatch = listBatch;
+    public void setResult(OrderDetail result) {
+        this.result = result;
     }
 
     public String getMessage() {
